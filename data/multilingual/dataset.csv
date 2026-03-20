@@ -1,0 +1,481 @@
+sentence_id,factor_id,domain_id,canonical_meaning,surface_family,split,sentence_text,hard_negative_factor_ids,language
+A1_00,A1,A,the object is hot,F1,train,The object is hot.,"[""A3"", ""A2"", ""A4""]",en
+A1_01,A1,A,the object is hot,F1,train,The thing is hot.,"[""A3"", ""A2"", ""A4""]",en
+A1_02,A1,A,the object is hot,F2,train,The item has a high temperature.,"[""A3"", ""A2"", ""A4""]",en
+A1_03,A1,A,the object is hot,F2,train,The object exhibits intense heat.,"[""A3"", ""A2"", ""A4""]",en
+A1_04,A1,A,the object is hot,F3,val,What characterizes the object is its high temperature.,"[""A3"", ""A2"", ""A4""]",en
+A1_05,A1,A,the object is hot,F3,val,Hot is how the object would be described.,"[""A3"", ""A2"", ""A4""]",en
+A1_06,A1,A,the object is hot,F3,val,"The object, notably hot, is defined by its heat.","[""A3"", ""A2"", ""A4""]",en
+A1_07,A1,A,the object is hot,F3,val,It is the heat of the object that makes it stand out.,"[""A3"", ""A2"", ""A4""]",en
+A1_08,A1,A,the object is hot,F4,test,Touching it would cause immediate discomfort from heat.,"[""A3"", ""A2"", ""A4""]",en
+A1_09,A1,A,the object is hot,F4,test,It radiates enough heat to be very uncomfortable.,"[""A3"", ""A2"", ""A4""]",en
+A1_10,A1,A,the object is hot,F5,test,"Upon contact, one immediately notices the intense heat.","[""A3"", ""A2"", ""A4""]",en
+A1_11,A1,A,the object is hot,F5,test,"When touched, the surface feels noticeably hot.","[""A3"", ""A2"", ""A4""]",en
+A2_00,A2,A,the object is cold,F1,train,The object is cold.,"[""A4"", ""A3"", ""A1""]",en
+A2_01,A2,A,the object is cold,F1,train,The thing is cold.,"[""A4"", ""A3"", ""A1""]",en
+A2_02,A2,A,the object is cold,F2,train,The item has a low temperature.,"[""A4"", ""A3"", ""A1""]",en
+A2_03,A2,A,the object is cold,F2,train,The object registers a cold temperature.,"[""A4"", ""A3"", ""A1""]",en
+A2_04,A2,A,the object is cold,F3,val,Cold is how the object would be described.,"[""A4"", ""A3"", ""A1""]",en
+A2_05,A2,A,the object is cold,F3,val,What characterizes the object is its low temperature.,"[""A4"", ""A3"", ""A1""]",en
+A2_06,A2,A,the object is cold,F3,val,"The object, notably cold, is defined by its chill.","[""A4"", ""A3"", ""A1""]",en
+A2_07,A2,A,the object is cold,F3,val,It is the coldness of the object that is noticeable.,"[""A4"", ""A3"", ""A1""]",en
+A2_08,A2,A,the object is cold,F4,test,Touching it produces a strong cold sensation.,"[""A4"", ""A3"", ""A1""]",en
+A2_09,A2,A,the object is cold,F4,test,It draws heat from the hand upon contact.,"[""A4"", ""A3"", ""A1""]",en
+A2_10,A2,A,the object is cold,F5,test,"Upon contact, the cold is immediately apparent.","[""A4"", ""A3"", ""A1""]",en
+A2_11,A2,A,the object is cold,F5,test,"When touched, the surface sends a chill through one's fingers.","[""A4"", ""A3"", ""A1""]",en
+A3_00,A3,A,the object is warm,F1,train,The object is warm.,"[""A4"", ""A1"", ""A2""]",en
+A3_01,A3,A,the object is warm,F1,train,The thing is warm.,"[""A4"", ""A1"", ""A2""]",en
+A3_02,A3,A,the object is warm,F2,train,The item has a moderate warmth.,"[""A4"", ""A1"", ""A2""]",en
+A3_03,A3,A,the object is warm,F2,train,The object has a pleasantly elevated temperature.,"[""A4"", ""A1"", ""A2""]",en
+A3_04,A3,A,the object is warm,F3,val,Warm is how the object would be described.,"[""A4"", ""A1"", ""A2""]",en
+A3_05,A3,A,the object is warm,F3,val,What characterizes the object is its gentle warmth.,"[""A4"", ""A1"", ""A2""]",en
+A3_06,A3,A,the object is warm,F3,val,"The object, which is warm, gives off gentle heat.","[""A4"", ""A1"", ""A2""]",en
+A3_07,A3,A,the object is warm,F3,val,It is the warmth of the object that makes it comfortable.,"[""A4"", ""A1"", ""A2""]",en
+A3_08,A3,A,the object is warm,F4,test,Touching it gives a pleasant warm sensation.,"[""A4"", ""A1"", ""A2""]",en
+A3_09,A3,A,the object is warm,F4,test,It gives off mild heat without being uncomfortable.,"[""A4"", ""A1"", ""A2""]",en
+A3_10,A3,A,the object is warm,F5,test,"Upon contact, one feels a gentle, comfortable warmth.","[""A4"", ""A1"", ""A2""]",en
+A3_11,A3,A,the object is warm,F5,test,"When touched, it feels pleasantly warm but not hot.","[""A4"", ""A1"", ""A2""]",en
+A4_00,A4,A,the object is cool,F1,train,The object is cool.,"[""A3"", ""A2"", ""A1""]",en
+A4_01,A4,A,the object is cool,F1,train,The thing is cool.,"[""A3"", ""A2"", ""A1""]",en
+A4_02,A4,A,the object is cool,F2,train,The item is slightly below room temperature.,"[""A3"", ""A2"", ""A1""]",en
+A4_03,A4,A,the object is cool,F2,train,The object has a mildly low temperature.,"[""A3"", ""A2"", ""A1""]",en
+A4_04,A4,A,the object is cool,F3,val,Cool is how the object would be described.,"[""A3"", ""A2"", ""A1""]",en
+A4_05,A4,A,the object is cool,F3,val,What characterizes the object is its mild coolness.,"[""A3"", ""A2"", ""A1""]",en
+A4_06,A4,A,the object is cool,F3,val,"The object, which is cool, is mildly chilled.","[""A3"", ""A2"", ""A1""]",en
+A4_07,A4,A,the object is cool,F3,val,It is the slight coolness that characterizes the object.,"[""A3"", ""A2"", ""A1""]",en
+A4_08,A4,A,the object is cool,F4,test,Touching it produces a mild cool sensation.,"[""A3"", ""A2"", ""A1""]",en
+A4_09,A4,A,the object is cool,F4,test,It feels cooler than the surrounding air.,"[""A3"", ""A2"", ""A1""]",en
+A4_10,A4,A,the object is cool,F5,test,"Upon contact, one notices a mild, refreshing coolness.","[""A3"", ""A2"", ""A1""]",en
+A4_11,A4,A,the object is cool,F5,test,"When touched, it feels slightly cool without being cold.","[""A3"", ""A2"", ""A1""]",en
+B1_00,B1,B,the object is large,F1,train,The object is large.,"[""B2"", ""B4""]",en
+B1_01,B1,B,the object is large,F1,train,The thing is large.,"[""B2"", ""B4""]",en
+B1_02,B1,B,the object is large,F2,train,The item is big in size.,"[""B2"", ""B4""]",en
+B1_03,B1,B,the object is large,F2,train,The object takes up considerable space.,"[""B2"", ""B4""]",en
+B1_04,B1,B,the object is large,F3,val,Large is how the object would be described.,"[""B2"", ""B4""]",en
+B1_05,B1,B,the object is large,F3,val,What the object is known for is being large.,"[""B2"", ""B4""]",en
+B1_06,B1,B,the object is large,F3,val,"The object, which is large, stands out for its size.","[""B2"", ""B4""]",en
+B1_07,B1,B,the object is large,F3,val,It is the large size of the object that is notable.,"[""B2"", ""B4""]",en
+B1_08,B1,B,the object is large,F4,test,It is noticeably bigger than average.,"[""B2"", ""B4""]",en
+B1_09,B1,B,the object is large,F4,test,You would call it large compared to similar objects.,"[""B2"", ""B4""]",en
+B1_10,B1,B,the object is large,F5,test,"When placed next to a typical object, it appears quite large.","[""B2"", ""B4""]",en
+B1_11,B1,B,the object is large,F5,test,One immediately notices the large size when looking at the object.,"[""B2"", ""B4""]",en
+B2_00,B2,B,the object is small,F1,train,The object is small.,"[""B1"", ""B4""]",en
+B2_01,B2,B,the object is small,F1,train,The thing is small.,"[""B1"", ""B4""]",en
+B2_02,B2,B,the object is small,F2,train,The item is little in size.,"[""B1"", ""B4""]",en
+B2_03,B2,B,the object is small,F2,train,The object takes up very little space.,"[""B1"", ""B4""]",en
+B2_04,B2,B,the object is small,F3,val,Small is how the object would be described.,"[""B1"", ""B4""]",en
+B2_05,B2,B,the object is small,F3,val,What the object is known for is being small.,"[""B1"", ""B4""]",en
+B2_06,B2,B,the object is small,F3,val,"The object, which is small, is compact in size.","[""B1"", ""B4""]",en
+B2_07,B2,B,the object is small,F3,val,It is the small size of the object that is notable.,"[""B1"", ""B4""]",en
+B2_08,B2,B,the object is small,F4,test,It is noticeably smaller than average.,"[""B1"", ""B4""]",en
+B2_09,B2,B,the object is small,F4,test,You would call it small compared to similar objects.,"[""B1"", ""B4""]",en
+B2_10,B2,B,the object is small,F5,test,"When placed next to a typical object, it appears quite small.","[""B1"", ""B4""]",en
+B2_11,B2,B,the object is small,F5,test,One immediately notices the small size when looking at the object.,"[""B1"", ""B4""]",en
+B3_00,B3,B,the object is huge,F1,train,The object is huge.,"[""B1"", ""B2""]",en
+B3_01,B3,B,the object is huge,F1,train,The thing is huge.,"[""B1"", ""B2""]",en
+B3_02,B3,B,the object is huge,F2,train,The item is enormous in size.,"[""B1"", ""B2""]",en
+B3_03,B3,B,the object is huge,F2,train,The object is extremely large.,"[""B1"", ""B2""]",en
+B3_04,B3,B,the object is huge,F3,val,Huge is how the object would be described.,"[""B1"", ""B2""]",en
+B3_05,B3,B,the object is huge,F3,val,What the object is known for is being huge.,"[""B1"", ""B2""]",en
+B3_06,B3,B,the object is huge,F3,val,"The object, which is huge, is far larger than typical.","[""B1"", ""B2""]",en
+B3_07,B3,B,the object is huge,F3,val,It is the immense size of the object that stands out.,"[""B1"", ""B2""]",en
+B3_08,B3,B,the object is huge,F4,test,It is vastly bigger than comparable objects.,"[""B1"", ""B2""]",en
+B3_09,B3,B,the object is huge,F4,test,Few things are as large as this object.,"[""B1"", ""B2""]",en
+B3_10,B3,B,the object is huge,F5,test,"When placed next to a typical object, it is dramatically larger.","[""B1"", ""B2""]",en
+B3_11,B3,B,the object is huge,F5,test,The sheer hugeness of the object is immediately apparent.,"[""B1"", ""B2""]",en
+B4_00,B4,B,the object is tiny,F1,train,The object is tiny.,"[""B2"", ""B1""]",en
+B4_01,B4,B,the object is tiny,F1,train,The thing is tiny.,"[""B2"", ""B1""]",en
+B4_02,B4,B,the object is tiny,F2,train,The item is minuscule in size.,"[""B2"", ""B1""]",en
+B4_03,B4,B,the object is tiny,F2,train,The object is extremely small.,"[""B2"", ""B1""]",en
+B4_04,B4,B,the object is tiny,F3,val,Tiny is how the object would be described.,"[""B2"", ""B1""]",en
+B4_05,B4,B,the object is tiny,F3,val,What the object is known for is being tiny.,"[""B2"", ""B1""]",en
+B4_06,B4,B,the object is tiny,F3,val,"The object, which is tiny, is far smaller than typical.","[""B2"", ""B1""]",en
+B4_07,B4,B,the object is tiny,F3,val,It is the very small size of the object that stands out.,"[""B2"", ""B1""]",en
+B4_08,B4,B,the object is tiny,F4,test,It is drastically smaller than comparable objects.,"[""B2"", ""B1""]",en
+B4_09,B4,B,the object is tiny,F4,test,Few things are as small as this object.,"[""B2"", ""B1""]",en
+B4_10,B4,B,the object is tiny,F5,test,"When placed next to a typical object, it appears very tiny.","[""B2"", ""B1""]",en
+B4_11,B4,B,the object is tiny,F5,test,The tiny size of the object is immediately apparent.,"[""B2"", ""B1""]",en
+C1_00,C1,C,the animal is a dog,F1,train,The animal is a dog.,"[""C3"", ""C2""]",en
+C1_01,C1,C,the animal is a dog,F1,train,The creature is a dog.,"[""C3"", ""C2""]",en
+C1_02,C1,C,the animal is a dog,F2,train,It is a domesticated canine.,"[""C3"", ""C2""]",en
+C1_03,C1,C,the animal is a dog,F2,train,The animal belongs to the dog species.,"[""C3"", ""C2""]",en
+C1_04,C1,C,the animal is a dog,F3,val,"What the animal is, specifically, is a dog.","[""C3"", ""C2""]",en
+C1_05,C1,C,the animal is a dog,F3,val,A dog is what this animal is.,"[""C3"", ""C2""]",en
+C1_06,C1,C,the animal is a dog,F3,val,"The animal, which is a dog, is domesticated.","[""C3"", ""C2""]",en
+C1_07,C1,C,the animal is a dog,F3,val,It is the fact that the animal is a dog that matters.,"[""C3"", ""C2""]",en
+C1_08,C1,C,the animal is a dog,F4,test,This is the kind of animal that barks and is kept as a pet.,"[""C3"", ""C2""]",en
+C1_09,C1,C,the animal is a dog,F4,test,It is the most common household canine companion.,"[""C3"", ""C2""]",en
+C1_10,C1,C,the animal is a dog,F5,test,"As a dog, this animal is one of the most familiar domestic pets.","[""C3"", ""C2""]",en
+C1_11,C1,C,the animal is a dog,F5,test,This animal belongs to the species commonly known as the domestic dog.,"[""C3"", ""C2""]",en
+C2_00,C2,C,the animal is a canine,F1,train,The animal is a canine.,"[""C3"", ""C1""]",en
+C2_01,C2,C,the animal is a canine,F1,train,The creature is a canine.,"[""C3"", ""C1""]",en
+C2_02,C2,C,the animal is a canine,F2,train,It belongs to the dog family.,"[""C3"", ""C1""]",en
+C2_03,C2,C,the animal is a canine,F2,train,The animal is a member of the canid family.,"[""C3"", ""C1""]",en
+C2_04,C2,C,the animal is a canine,F3,val,"What the animal is, specifically, is a canine.","[""C3"", ""C1""]",en
+C2_05,C2,C,the animal is a canine,F3,val,A canine is what this animal is.,"[""C3"", ""C1""]",en
+C2_06,C2,C,the animal is a canine,F3,val,"The animal, which is a canine, belongs to the dog family.","[""C3"", ""C1""]",en
+C2_07,C2,C,the animal is a canine,F3,val,It is the canine nature of the animal that defines it.,"[""C3"", ""C1""]",en
+C2_08,C2,C,the animal is a canine,F4,test,"This is an animal from the dog family, broader than just dogs.","[""C3"", ""C1""]",en
+C2_09,C2,C,the animal is a canine,F4,test,It is a member of the taxonomic group that includes wolves and foxes.,"[""C3"", ""C1""]",en
+C2_10,C2,C,the animal is a canine,F5,test,"As a canine, this animal belongs to the same family as wolves.","[""C3"", ""C1""]",en
+C2_11,C2,C,the animal is a canine,F5,test,"This animal is classified within the canid family, making it a canine.","[""C3"", ""C1""]",en
+C3_00,C3,C,the animal is a mammal,F1,train,The animal is a mammal.,"[""C1""]",en
+C3_01,C3,C,the animal is a mammal,F1,train,The creature is a mammal.,"[""C1""]",en
+C3_02,C3,C,the animal is a mammal,F2,train,It belongs to the mammal class.,"[""C1""]",en
+C3_03,C3,C,the animal is a mammal,F2,train,The animal is a mammalian creature.,"[""C1""]",en
+C3_04,C3,C,the animal is a mammal,F3,val,"What the animal is, specifically, is a mammal.","[""C1""]",en
+C3_05,C3,C,the animal is a mammal,F3,val,A mammal is what this animal is.,"[""C1""]",en
+C3_06,C3,C,the animal is a mammal,F3,val,"The animal, which is a mammal, nurses its young.","[""C1""]",en
+C3_07,C3,C,the animal is a mammal,F3,val,It is the mammalian classification that defines this animal.,"[""C1""]",en
+C3_08,C3,C,the animal is a mammal,F4,test,This animal is warm-blooded and nurses its young with milk.,"[""C1""]",en
+C3_09,C3,C,the animal is a mammal,F4,test,It is the type of animal that has hair and feeds young with milk.,"[""C1""]",en
+C3_10,C3,C,the animal is a mammal,F5,test,"As a mammal, this animal is warm-blooded and raises young on milk.","[""C1""]",en
+C3_11,C3,C,the animal is a mammal,F5,test,This creature belongs to the class of animals that includes humans and whales.,"[""C1""]",en
+C4_00,C4,C,the dog is a working dog,F1,train,The dog is a working dog.,"[""C1"", ""C2""]",en
+C4_01,C4,C,the dog is a working dog,F1,train,This dog is a working dog.,"[""C1"", ""C2""]",en
+C4_02,C4,C,the dog is a working dog,F2,train,It is trained to perform tasks for people.,"[""C1"", ""C2""]",en
+C4_03,C4,C,the dog is a working dog,F2,train,The animal is a task-trained dog.,"[""C1"", ""C2""]",en
+C4_04,C4,C,the dog is a working dog,F3,val,What defines this dog is its working role.,"[""C1"", ""C2""]",en
+C4_05,C4,C,the dog is a working dog,F3,val,A working dog is what this dog is.,"[""C1"", ""C2""]",en
+C4_06,C4,C,the dog is a working dog,F3,val,"The dog, which is a working dog, performs practical tasks.","[""C1"", ""C2""]",en
+C4_07,C4,C,the dog is a working dog,F3,val,It is its working role that sets this dog apart.,"[""C1"", ""C2""]",en
+C4_08,C4,C,the dog is a working dog,F4,test,This dog is trained for specific tasks rather than just companionship.,"[""C1"", ""C2""]",en
+C4_09,C4,C,the dog is a working dog,F4,test,"It performs functions like herding, guarding, or assisting people.","[""C1"", ""C2""]",en
+C4_10,C4,C,the dog is a working dog,F5,test,"As a working dog, it is trained and used for specific practical tasks.","[""C1"", ""C2""]",en
+C4_11,C4,C,the dog is a working dog,F5,test,"Unlike pet dogs, this dog serves in a professional or service capacity.","[""C1"", ""C2""]",en
+D1_00,D1,D,the vehicle is an electric passenger road vehicle,F1,train,The vehicle is an electric passenger road vehicle.,"[""D2""]",en
+D1_01,D1,D,the vehicle is an electric passenger road vehicle,F1,train,This vehicle is an electric car for passengers.,"[""D2""]",en
+D1_02,D1,D,the vehicle is an electric passenger road vehicle,F2,train,It is a road-going passenger vehicle powered by electricity.,"[""D2""]",en
+D1_03,D1,D,the vehicle is an electric passenger road vehicle,F2,train,The car carries people and runs on battery power.,"[""D2""]",en
+D1_04,D1,D,the vehicle is an electric passenger road vehicle,F3,val,What defines this vehicle is that it is electric and carries passengers.,"[""D2""]",en
+D1_05,D1,D,the vehicle is an electric passenger road vehicle,F3,val,An electric passenger vehicle is what this is.,"[""D2""]",en
+D1_06,D1,D,the vehicle is an electric passenger road vehicle,F3,val,"The vehicle, which is electric and passenger-carrying, runs on batteries.","[""D2""]",en
+D1_07,D1,D,the vehicle is an electric passenger road vehicle,F3,val,It is the electric propulsion and passenger function that define this vehicle.,"[""D2""]",en
+D1_08,D1,D,the vehicle is an electric passenger road vehicle,F4,test,This vehicle runs on electricity and is designed to carry people.,"[""D2""]",en
+D1_09,D1,D,the vehicle is an electric passenger road vehicle,F4,test,It is a battery-powered car meant to transport passengers.,"[""D2""]",en
+D1_10,D1,D,the vehicle is an electric passenger road vehicle,F5,test,"As an electric passenger vehicle, it carries people using battery-powered motors.","[""D2""]",en
+D1_11,D1,D,the vehicle is an electric passenger road vehicle,F5,test,This vehicle transports passengers along roads using stored electrical energy.,"[""D2""]",en
+D2_00,D2,D,the vehicle is used to transport goods,F1,train,The vehicle is a cargo vehicle.,"[""D1"", ""D3""]",en
+D2_01,D2,D,the vehicle is used to transport goods,F1,train,This vehicle carries cargo.,"[""D1"", ""D3""]",en
+D2_02,D2,D,the vehicle is used to transport goods,F2,train,It is meant to carry goods rather than passengers.,"[""D1"", ""D3""]",en
+D2_03,D2,D,the vehicle is used to transport goods,F2,train,The vehicle is designed for transporting cargo.,"[""D1"", ""D3""]",en
+D2_04,D2,D,the vehicle is used to transport goods,F3,val,What defines this vehicle is its cargo-carrying purpose.,"[""D1"", ""D3""]",en
+D2_05,D2,D,the vehicle is used to transport goods,F3,val,A cargo vehicle is what this is.,"[""D1"", ""D3""]",en
+D2_06,D2,D,the vehicle is used to transport goods,F3,val,"The vehicle, which is designed for cargo, moves goods rather than people.","[""D1"", ""D3""]",en
+D2_07,D2,D,the vehicle is used to transport goods,F3,val,It is the function of carrying goods that defines this vehicle.,"[""D1"", ""D3""]",en
+D2_08,D2,D,the vehicle is used to transport goods,F4,test,This vehicle is built for moving freight rather than people.,"[""D1"", ""D3""]",en
+D2_09,D2,D,the vehicle is used to transport goods,F4,test,It is a type of vehicle intended to transport goods from place to place.,"[""D1"", ""D3""]",en
+D2_10,D2,D,the vehicle is used to transport goods,F5,test,"As a cargo vehicle, it is designed to move goods rather than passengers.","[""D1"", ""D3""]",en
+D2_11,D2,D,the vehicle is used to transport goods,F5,test,This vehicle's primary function is the transportation of freight and goods.,"[""D1"", ""D3""]",en
+D3_00,D3,D,the vehicle is a compact car,F1,train,The vehicle is a compact car.,"[""D2""]",en
+D3_01,D3,D,the vehicle is a compact car,F1,train,This automobile is a compact car.,"[""D2""]",en
+D3_02,D3,D,the vehicle is a compact car,F2,train,It is a small passenger car.,"[""D2""]",en
+D3_03,D3,D,the vehicle is a compact car,F2,train,The car is built in a compact size class.,"[""D2""]",en
+D3_04,D3,D,the vehicle is a compact car,F3,val,What defines this vehicle is being a compact car.,"[""D2""]",en
+D3_05,D3,D,the vehicle is a compact car,F3,val,A compact car is what this vehicle is.,"[""D2""]",en
+D3_06,D3,D,the vehicle is a compact car,F3,val,"The car, which is compact in size, carries passengers efficiently.","[""D2""]",en
+D3_07,D3,D,the vehicle is a compact car,F3,val,It is the compact size class that defines this car.,"[""D2""]",en
+D3_08,D3,D,the vehicle is a compact car,F4,test,This car is notably smaller than a standard full-size vehicle.,"[""D2""]",en
+D3_09,D3,D,the vehicle is a compact car,F4,test,"It is a small passenger automobile, efficient for urban use.","[""D2""]",en
+D3_10,D3,D,the vehicle is a compact car,F5,test,"As a compact car, it occupies less space than standard sedans.","[""D2""]",en
+D3_11,D3,D,the vehicle is a compact car,F5,test,This automobile is classified as compact due to its relatively small size.,"[""D2""]",en
+D4_00,D4,D,the software system is a distributed database,F1,train,The software system is a distributed database.,[],en
+D4_01,D4,D,the software system is a distributed database,F1,train,This system is a distributed database.,[],en
+D4_02,D4,D,the software system is a distributed database,F2,train,It stores data across multiple machines.,[],en
+D4_03,D4,D,the software system is a distributed database,F2,train,The database system is distributed over several nodes.,[],en
+D4_04,D4,D,the software system is a distributed database,F3,val,What defines this system is being a distributed database.,[],en
+D4_05,D4,D,the software system is a distributed database,F3,val,A distributed database is what this software is.,[],en
+D4_06,D4,D,the software system is a distributed database,F3,val,"The system, which is a distributed database, runs on multiple nodes.",[],en
+D4_07,D4,D,the software system is a distributed database,F3,val,It is the distributed nature of this database that sets it apart.,[],en
+D4_08,D4,D,the software system is a distributed database,F4,test,This software stores and manages data across multiple servers.,[],en
+D4_09,D4,D,the software system is a distributed database,F4,test,It is a database that does not rely on a single machine for storage.,[],en
+D4_10,D4,D,the software system is a distributed database,F5,test,"As a distributed database, it splits data across many nodes for reliability.",[],en
+D4_11,D4,D,the software system is a distributed database,F5,test,This database manages data across a cluster of machines rather than a single server.,[],en
+E1_00,E1,E,the footwear is a waterproof hiking boot,F1,train,The footwear is a waterproof hiking boot.,[],en
+E1_01,E1,E,the footwear is a waterproof hiking boot,F1,train,This shoe is a waterproof hiking boot.,[],en
+E1_02,E1,E,the footwear is a waterproof hiking boot,F2,train,It is a hiking boot that keeps water out.,[],en
+E1_03,E1,E,the footwear is a waterproof hiking boot,F2,train,The trail boot resists water entry.,[],en
+E1_04,E1,E,the footwear is a waterproof hiking boot,F3,val,What defines this footwear is being a waterproof hiking boot.,[],en
+E1_05,E1,E,the footwear is a waterproof hiking boot,F3,val,A waterproof hiking boot is what this is.,[],en
+E1_06,E1,E,the footwear is a waterproof hiking boot,F3,val,"The boot, which is designed for hiking, also repels water.",[],en
+E1_07,E1,E,the footwear is a waterproof hiking boot,F3,val,It is the combination of waterproofing and hiking design that defines this boot.,[],en
+E1_08,E1,E,the footwear is a waterproof hiking boot,F4,test,This boot is made for walking trails while keeping feet dry.,[],en
+E1_09,E1,E,the footwear is a waterproof hiking boot,F4,test,It is outdoor footwear designed for wet hiking conditions.,[],en
+E1_10,E1,E,the footwear is a waterproof hiking boot,F5,test,"As a waterproof hiking boot, it is built for trail use in wet environments.",[],en
+E1_11,E1,E,the footwear is a waterproof hiking boot,F5,test,This boot protects feet from moisture while providing support for hiking.,[],en
+E2_00,E2,E,the chair is an ergonomic office chair,F1,train,The chair is an ergonomic office chair.,[],en
+E2_01,E2,E,the chair is an ergonomic office chair,F1,train,This seat is an ergonomic office chair.,[],en
+E2_02,E2,E,the chair is an ergonomic office chair,F2,train,It is an office chair designed for ergonomic support.,[],en
+E2_03,E2,E,the chair is an ergonomic office chair,F2,train,The chair is made for desk work and body comfort.,[],en
+E2_04,E2,E,the chair is an ergonomic office chair,F3,val,What defines this chair is being ergonomic and for office use.,[],en
+E2_05,E2,E,the chair is an ergonomic office chair,F3,val,An ergonomic office chair is what this is.,[],en
+E2_06,E2,E,the chair is an ergonomic office chair,F3,val,"The chair, which is ergonomic, is made for office settings.",[],en
+E2_07,E2,E,the chair is an ergonomic office chair,F3,val,It is the ergonomic design for office use that defines this chair.,[],en
+E2_08,E2,E,the chair is an ergonomic office chair,F4,test,This chair is designed to support posture during long hours at a desk.,[],en
+E2_09,E2,E,the chair is an ergonomic office chair,F4,test,It is a work seat engineered to reduce physical strain.,[],en
+E2_10,E2,E,the chair is an ergonomic office chair,F5,test,"As an ergonomic office chair, it supports the body during desk work.",[],en
+E2_11,E2,E,the chair is an ergonomic office chair,F5,test,This chair provides ergonomic support suited for office environments.,[],en
+E3_00,E3,E,the building is a residential apartment building,F1,train,The building is a residential apartment building.,"[""E4""]",en
+E3_01,E3,E,the building is a residential apartment building,F1,train,This structure is a residential apartment building.,"[""E4""]",en
+E3_02,E3,E,the building is a residential apartment building,F2,train,It is a structure containing apartments for people to live in.,"[""E4""]",en
+E3_03,E3,E,the building is a residential apartment building,F2,train,The building is used for housing multiple households.,"[""E4""]",en
+E3_04,E3,E,the building is a residential apartment building,F3,val,What defines this building is being a residential apartment building.,"[""E4""]",en
+E3_05,E3,E,the building is a residential apartment building,F3,val,A residential apartment building is what this structure is.,"[""E4""]",en
+E3_06,E3,E,the building is a residential apartment building,F3,val,"The building, which contains apartments, is used for residential living.","[""E4""]",en
+E3_07,E3,E,the building is a residential apartment building,F3,val,It is the residential apartment function that defines this building.,"[""E4""]",en
+E3_08,E3,E,the building is a residential apartment building,F4,test,This building contains multiple dwelling units for people to live in.,"[""E4""]",en
+E3_09,E3,E,the building is a residential apartment building,F4,test,It is a multi-unit structure where people reside in separate apartments.,"[""E4""]",en
+E3_10,E3,E,the building is a residential apartment building,F5,test,"As a residential apartment building, it provides housing to multiple households.","[""E4""]",en
+E3_11,E3,E,the building is a residential apartment building,F5,test,This structure is built to serve as home to many people in separate apartment units.,"[""E4""]",en
+E4_00,E4,E,the building is a high-rise apartment building,F1,train,The building is a high-rise apartment building.,"[""E3""]",en
+E4_01,E4,E,the building is a high-rise apartment building,F1,train,This structure is a high-rise apartment building.,"[""E3""]",en
+E4_02,E4,E,the building is a high-rise apartment building,F2,train,It is a tall residential structure containing apartments.,"[""E3""]",en
+E4_03,E4,E,the building is a high-rise apartment building,F2,train,This apartment building rises many stories high.,"[""E3""]",en
+E4_04,E4,E,the building is a high-rise apartment building,F3,val,What defines this building is being a tall apartment building.,"[""E3""]",en
+E4_05,E4,E,the building is a high-rise apartment building,F3,val,A high-rise apartment building is what this structure is.,"[""E3""]",en
+E4_06,E4,E,the building is a high-rise apartment building,F3,val,"The building, which is a high-rise, contains residential apartments.","[""E3""]",en
+E4_07,E4,E,the building is a high-rise apartment building,F3,val,It is the height and apartment function that define this building.,"[""E3""]",en
+E4_08,E4,E,the building is a high-rise apartment building,F4,test,This tall building contains many floors of apartment residences.,"[""E3""]",en
+E4_09,E4,E,the building is a high-rise apartment building,F4,test,It is a very tall structure where many families live in stacked apartments.,"[""E3""]",en
+E4_10,E4,E,the building is a high-rise apartment building,F5,test,"As a high-rise apartment building, it houses many residents across many floors.","[""E3""]",en
+E4_11,E4,E,the building is a high-rise apartment building,F5,test,This multi-story structure contains apartments across its many levels.,"[""E3""]",en
+F1_00,F1,F,the institution is a public research university,F1,train,The institution is a public research university.,"[""F2""]",en
+F1_01,F1,F,the institution is a public research university,F1,train,This organization is a public research university.,"[""F2""]",en
+F1_02,F1,F,the institution is a public research university,F2,train,It is a publicly funded university with a strong research mission.,"[""F2""]",en
+F1_03,F1,F,the institution is a public research university,F2,train,The university belongs to the public sector and focuses on research.,"[""F2""]",en
+F1_04,F1,F,the institution is a public research university,F3,val,What defines this institution is being a public research university.,"[""F2""]",en
+F1_05,F1,F,the institution is a public research university,F3,val,A public research university is what this institution is.,"[""F2""]",en
+F1_06,F1,F,the institution is a public research university,F3,val,"The university, which is public and research-focused, receives state funding.","[""F2""]",en
+F1_07,F1,F,the institution is a public research university,F3,val,It is the public funding and research mission that define this university.,"[""F2""]",en
+F1_08,F1,F,the institution is a public research university,F4,test,This is a state-funded university where significant research takes place.,"[""F2""]",en
+F1_09,F1,F,the institution is a public research university,F4,test,It is a publicly supported higher education institution with major research programs.,"[""F2""]",en
+F1_10,F1,F,the institution is a public research university,F5,test,"As a public research university, it is funded by the state and produces research.","[""F2""]",en
+F1_11,F1,F,the institution is a public research university,F5,test,This institution is publicly funded and known for its strong research activities.,"[""F2""]",en
+F2_00,F2,F,the institution is a public university,F1,train,The institution is a public university.,"[""F1""]",en
+F2_01,F2,F,the institution is a public university,F1,train,This organization is a public university.,"[""F1""]",en
+F2_02,F2,F,the institution is a public university,F2,train,It is a university funded by the state or public sector.,"[""F1""]",en
+F2_03,F2,F,the institution is a public university,F2,train,The university belongs to the public education system.,"[""F1""]",en
+F2_04,F2,F,the institution is a public university,F3,val,What defines this institution is being a public university.,"[""F1""]",en
+F2_05,F2,F,the institution is a public university,F3,val,A public university is what this institution is.,"[""F1""]",en
+F2_06,F2,F,the institution is a public university,F3,val,"The university, which is publicly funded, grants university degrees.","[""F1""]",en
+F2_07,F2,F,the institution is a public university,F3,val,It is the public funding that defines this university.,"[""F1""]",en
+F2_08,F2,F,the institution is a public university,F4,test,This university is funded by government rather than private sources.,"[""F1""]",en
+F2_09,F2,F,the institution is a public university,F4,test,It is a state-supported higher education institution.,"[""F1""]",en
+F2_10,F2,F,the institution is a public university,F5,test,"As a public university, it is funded by public money and open to students broadly.","[""F1""]",en
+F2_11,F2,F,the institution is a public university,F5,test,This institution receives state funding and operates as a public higher education provider.,"[""F1""]",en
+F3_00,F3,F,the document is a fixed-term employment contract,F1,train,The document is a fixed-term employment contract.,"[""F4""]",en
+F3_01,F3,F,the document is a fixed-term employment contract,F1,train,This agreement is a fixed-term employment contract.,"[""F4""]",en
+F3_02,F3,F,the document is a fixed-term employment contract,F2,train,It is an employment agreement with a defined end date.,"[""F4""]",en
+F3_03,F3,F,the document is a fixed-term employment contract,F2,train,This contract hires a worker for a limited period.,"[""F4""]",en
+F3_04,F3,F,the document is a fixed-term employment contract,F3,val,What defines this document is being a fixed-term employment contract.,"[""F4""]",en
+F3_05,F3,F,the document is a fixed-term employment contract,F3,val,A fixed-term employment contract is what this document is.,"[""F4""]",en
+F3_06,F3,F,the document is a fixed-term employment contract,F3,val,"The contract, which covers employment, specifies a fixed end date.","[""F4""]",en
+F3_07,F3,F,the document is a fixed-term employment contract,F3,val,It is the fixed duration of this employment contract that defines it.,"[""F4""]",en
+F3_08,F3,F,the document is a fixed-term employment contract,F4,test,This document formalizes a job arrangement that will end on a specific date.,"[""F4""]",en
+F3_09,F3,F,the document is a fixed-term employment contract,F4,test,"It is a contract that employs someone for a set period, after which it expires.","[""F4""]",en
+F3_10,F3,F,the document is a fixed-term employment contract,F5,test,"As a fixed-term contract, it establishes employment that ends on a set date.","[""F4""]",en
+F3_11,F3,F,the document is a fixed-term employment contract,F5,test,This employment contract differs from permanent ones in that it has a defined expiration.,"[""F4""]",en
+F4_00,F4,F,the document is an employment contract,F1,train,The document is an employment contract.,"[""F3""]",en
+F4_01,F4,F,the document is an employment contract,F1,train,This agreement is an employment contract.,"[""F3""]",en
+F4_02,F4,F,the document is an employment contract,F2,train,It is an agreement governing a work relationship.,"[""F3""]",en
+F4_03,F4,F,the document is an employment contract,F2,train,The document formalizes a job arrangement.,"[""F3""]",en
+F4_04,F4,F,the document is an employment contract,F3,val,What defines this document is being an employment contract.,"[""F3""]",en
+F4_05,F4,F,the document is an employment contract,F3,val,An employment contract is what this document is.,"[""F3""]",en
+F4_06,F4,F,the document is an employment contract,F3,val,"The contract, which governs employment, sets out the terms of work.","[""F3""]",en
+F4_07,F4,F,the document is an employment contract,F3,val,It is the employment relationship that this contract governs.,"[""F3""]",en
+F4_08,F4,F,the document is an employment contract,F4,test,This document sets out the formal terms under which someone is employed.,"[""F3""]",en
+F4_09,F4,F,the document is an employment contract,F4,test,It is a legal agreement establishing the conditions of a paid work relationship.,"[""F3""]",en
+F4_10,F4,F,the document is an employment contract,F5,test,"As an employment contract, it formalizes the agreement between employer and employee.","[""F3""]",en
+F4_11,F4,F,the document is an employment contract,F5,test,This document defines the rights and obligations of both employer and worker.,"[""F3""]",en
+A1_ml_de_00,A1,A,,F1,ml,Das Objekt ist heiß.,,de
+A1_ml_de_01,A1,A,,F1,ml,Das Ding ist heiß.,,de
+A1_ml_es_00,A1,A,,F1,ml,El objeto está caliente.,,es
+A1_ml_es_01,A1,A,,F1,ml,La cosa está caliente.,,es
+A1_ml_ar_00,A1,A,,F1,ml,الجسم حار.,,ar
+A1_ml_ar_01,A1,A,,F1,ml,الشيء حار.,,ar
+A1_ml_zh_00,A1,A,,F1,ml,这个物体是热的。,,zh
+A1_ml_zh_01,A1,A,,F1,ml,这个东西是热的。,,zh
+A2_ml_de_00,A2,A,,F1,ml,Das Objekt ist kalt.,,de
+A2_ml_de_01,A2,A,,F1,ml,Das Ding ist kalt.,,de
+A2_ml_es_00,A2,A,,F1,ml,El objeto está frío.,,es
+A2_ml_es_01,A2,A,,F1,ml,La cosa está fría.,,es
+A2_ml_ar_00,A2,A,,F1,ml,الجسم بارد.,,ar
+A2_ml_ar_01,A2,A,,F1,ml,الشيء بارد.,,ar
+A2_ml_zh_00,A2,A,,F1,ml,这个物体是冷的。,,zh
+A2_ml_zh_01,A2,A,,F1,ml,这个东西是冷的。,,zh
+A3_ml_de_00,A3,A,,F1,ml,Das Objekt ist warm.,,de
+A3_ml_de_01,A3,A,,F1,ml,Das Ding ist warm.,,de
+A3_ml_es_00,A3,A,,F1,ml,El objeto está tibio.,,es
+A3_ml_es_01,A3,A,,F1,ml,La cosa está tibia.,,es
+A3_ml_ar_00,A3,A,,F1,ml,الجسم دافئ.,,ar
+A3_ml_ar_01,A3,A,,F1,ml,الشيء دافئ.,,ar
+A3_ml_zh_00,A3,A,,F1,ml,这个物体是温热的。,,zh
+A3_ml_zh_01,A3,A,,F1,ml,这个东西是温热的。,,zh
+A4_ml_de_00,A4,A,,F1,ml,Das Objekt ist kühl.,,de
+A4_ml_de_01,A4,A,,F1,ml,Das Ding ist kühl.,,de
+A4_ml_es_00,A4,A,,F1,ml,El objeto está fresco.,,es
+A4_ml_es_01,A4,A,,F1,ml,La cosa está fresca.,,es
+A4_ml_ar_00,A4,A,,F1,ml,الجسم فاتر.,,ar
+A4_ml_ar_01,A4,A,,F1,ml,الشيء فاتر.,,ar
+A4_ml_zh_00,A4,A,,F1,ml,这个物体是凉的。,,zh
+A4_ml_zh_01,A4,A,,F1,ml,这个东西是凉的。,,zh
+B1_ml_de_00,B1,B,,F1,ml,Das Objekt ist groß.,,de
+B1_ml_de_01,B1,B,,F1,ml,Das Ding ist groß.,,de
+B1_ml_es_00,B1,B,,F1,ml,El objeto es grande.,,es
+B1_ml_es_01,B1,B,,F1,ml,La cosa es grande.,,es
+B1_ml_ar_00,B1,B,,F1,ml,الجسم كبير.,,ar
+B1_ml_ar_01,B1,B,,F1,ml,الشيء كبير.,,ar
+B1_ml_zh_00,B1,B,,F1,ml,这个物体是大的。,,zh
+B1_ml_zh_01,B1,B,,F1,ml,这个东西是大的。,,zh
+B2_ml_de_00,B2,B,,F1,ml,Das Objekt ist klein.,,de
+B2_ml_de_01,B2,B,,F1,ml,Das Ding ist klein.,,de
+B2_ml_es_00,B2,B,,F1,ml,El objeto es pequeño.,,es
+B2_ml_es_01,B2,B,,F1,ml,La cosa es pequeña.,,es
+B2_ml_ar_00,B2,B,,F1,ml,الجسم صغير.,,ar
+B2_ml_ar_01,B2,B,,F1,ml,الشيء صغير.,,ar
+B2_ml_zh_00,B2,B,,F1,ml,这个物体是小的。,,zh
+B2_ml_zh_01,B2,B,,F1,ml,这个东西是小的。,,zh
+B3_ml_de_00,B3,B,,F1,ml,Das Objekt ist riesig.,,de
+B3_ml_de_01,B3,B,,F1,ml,Das Ding ist riesig.,,de
+B3_ml_es_00,B3,B,,F1,ml,El objeto es enorme.,,es
+B3_ml_es_01,B3,B,,F1,ml,La cosa es enorme.,,es
+B3_ml_ar_00,B3,B,,F1,ml,الجسم ضخم جداً.,,ar
+B3_ml_ar_01,B3,B,,F1,ml,الشيء ضخم جداً.,,ar
+B3_ml_zh_00,B3,B,,F1,ml,这个物体是巨大的。,,zh
+B3_ml_zh_01,B3,B,,F1,ml,这个东西是巨大的。,,zh
+B4_ml_de_00,B4,B,,F1,ml,Das Objekt ist winzig.,,de
+B4_ml_de_01,B4,B,,F1,ml,Das Ding ist winzig.,,de
+B4_ml_es_00,B4,B,,F1,ml,El objeto es diminuto.,,es
+B4_ml_es_01,B4,B,,F1,ml,La cosa es diminuta.,,es
+B4_ml_ar_00,B4,B,,F1,ml,الجسم ضئيل جداً.,,ar
+B4_ml_ar_01,B4,B,,F1,ml,الشيء ضئيل جداً.,,ar
+B4_ml_zh_00,B4,B,,F1,ml,这个物体是微小的。,,zh
+B4_ml_zh_01,B4,B,,F1,ml,这个东西是微小的。,,zh
+C1_ml_de_00,C1,C,,F1,ml,Das Tier ist ein Hund.,,de
+C1_ml_de_01,C1,C,,F1,ml,Das Lebewesen ist ein Hund.,,de
+C1_ml_es_00,C1,C,,F1,ml,El animal es un perro.,,es
+C1_ml_es_01,C1,C,,F1,ml,La criatura es un perro.,,es
+C1_ml_ar_00,C1,C,,F1,ml,الحيوان كلب.,,ar
+C1_ml_ar_01,C1,C,,F1,ml,المخلوق كلب.,,ar
+C1_ml_zh_00,C1,C,,F1,ml,这只动物是一只狗。,,zh
+C1_ml_zh_01,C1,C,,F1,ml,这个生物是一只狗。,,zh
+C2_ml_de_00,C2,C,,F1,ml,Das Tier ist ein Canide.,,de
+C2_ml_de_01,C2,C,,F1,ml,Das Lebewesen ist ein Canide.,,de
+C2_ml_es_00,C2,C,,F1,ml,El animal es un cánido.,,es
+C2_ml_es_01,C2,C,,F1,ml,La criatura es un cánido.,,es
+C2_ml_ar_00,C2,C,,F1,ml,الحيوان من فصيلة الكلبيات.,,ar
+C2_ml_ar_01,C2,C,,F1,ml,المخلوق من فصيلة الكلبيات.,,ar
+C2_ml_zh_00,C2,C,,F1,ml,这只动物是犬科动物。,,zh
+C2_ml_zh_01,C2,C,,F1,ml,这个生物是犬科动物。,,zh
+C3_ml_de_00,C3,C,,F1,ml,Das Tier ist ein Säugetier.,,de
+C3_ml_de_01,C3,C,,F1,ml,Das Lebewesen ist ein Säugetier.,,de
+C3_ml_es_00,C3,C,,F1,ml,El animal es un mamífero.,,es
+C3_ml_es_01,C3,C,,F1,ml,La criatura es un mamífero.,,es
+C3_ml_ar_00,C3,C,,F1,ml,الحيوان من الثدييات.,,ar
+C3_ml_ar_01,C3,C,,F1,ml,المخلوق من الثدييات.,,ar
+C3_ml_zh_00,C3,C,,F1,ml,这只动物是哺乳动物。,,zh
+C3_ml_zh_01,C3,C,,F1,ml,这个生物是哺乳动物。,,zh
+C4_ml_de_00,C4,C,,F1,ml,Der Hund ist ein Arbeitshund.,,de
+C4_ml_de_01,C4,C,,F1,ml,Dieser Hund ist ein Arbeitshund.,,de
+C4_ml_es_00,C4,C,,F1,ml,El perro es un perro de trabajo.,,es
+C4_ml_es_01,C4,C,,F1,ml,Este perro es un perro de trabajo.,,es
+C4_ml_ar_00,C4,C,,F1,ml,الكلب كلب عمل.,,ar
+C4_ml_ar_01,C4,C,,F1,ml,هذا الكلب كلب عمل.,,ar
+C4_ml_zh_00,C4,C,,F1,ml,这只狗是一只工作犬。,,zh
+C4_ml_zh_01,C4,C,,F1,ml,这只狗是工作犬。,,zh
+D1_ml_de_00,D1,D,,F1,ml,Das Fahrzeug ist ein elektrisches Personenkraftfahrzeug.,,de
+D1_ml_de_01,D1,D,,F1,ml,Dieses Fahrzeug ist ein elektrisches Auto für Passagiere.,,de
+D1_ml_es_00,D1,D,,F1,ml,El vehículo es un vehículo de pasajeros eléctrico de carretera.,,es
+D1_ml_es_01,D1,D,,F1,ml,Este vehículo es un automóvil eléctrico para pasajeros.,,es
+D1_ml_ar_00,D1,D,,F1,ml,المركبة مركبة ركاب كهربائية على الطريق.,,ar
+D1_ml_ar_01,D1,D,,F1,ml,هذه المركبة سيارة كهربائية لنقل الركاب.,,ar
+D1_ml_zh_00,D1,D,,F1,ml,这辆车是一辆电动载客公路车辆。,,zh
+D1_ml_zh_01,D1,D,,F1,ml,这辆车是一辆供乘客乘坐的电动汽车。,,zh
+D2_ml_de_00,D2,D,,F1,ml,Das Fahrzeug ist ein Güterfahrzeug.,,de
+D2_ml_de_01,D2,D,,F1,ml,Dieses Fahrzeug transportiert Güter.,,de
+D2_ml_es_00,D2,D,,F1,ml,El vehículo es un vehículo de carga.,,es
+D2_ml_es_01,D2,D,,F1,ml,Este vehículo transporta carga.,,es
+D2_ml_ar_00,D2,D,,F1,ml,المركبة مركبة شحن.,,ar
+D2_ml_ar_01,D2,D,,F1,ml,هذه المركبة تنقل البضائع.,,ar
+D2_ml_zh_00,D2,D,,F1,ml,这辆车是一辆货运车辆。,,zh
+D2_ml_zh_01,D2,D,,F1,ml,这辆车运载货物。,,zh
+D3_ml_de_00,D3,D,,F1,ml,Das Fahrzeug ist ein Kompaktwagen.,,de
+D3_ml_de_01,D3,D,,F1,ml,Dieses Auto ist ein Kompaktwagen.,,de
+D3_ml_es_00,D3,D,,F1,ml,El vehículo es un automóvil compacto.,,es
+D3_ml_es_01,D3,D,,F1,ml,Este automóvil es un automóvil compacto.,,es
+D3_ml_ar_00,D3,D,,F1,ml,المركبة سيارة مدمجة.,,ar
+D3_ml_ar_01,D3,D,,F1,ml,هذه السيارة سيارة مدمجة.,,ar
+D3_ml_zh_00,D3,D,,F1,ml,这辆车是一辆紧凑型轿车。,,zh
+D3_ml_zh_01,D3,D,,F1,ml,这辆汽车是一辆紧凑型轿车。,,zh
+D4_ml_de_00,D4,D,,F1,ml,Das Softwaresystem ist eine verteilte Datenbank.,,de
+D4_ml_de_01,D4,D,,F1,ml,Dieses System ist eine verteilte Datenbank.,,de
+D4_ml_es_00,D4,D,,F1,ml,El sistema de software es una base de datos distribuida.,,es
+D4_ml_es_01,D4,D,,F1,ml,Este sistema es una base de datos distribuida.,,es
+D4_ml_ar_00,D4,D,,F1,ml,نظام البرمجيات قاعدة بيانات موزعة.,,ar
+D4_ml_ar_01,D4,D,,F1,ml,هذا النظام قاعدة بيانات موزعة.,,ar
+D4_ml_zh_00,D4,D,,F1,ml,该软件系统是一个分布式数据库。,,zh
+D4_ml_zh_01,D4,D,,F1,ml,该系统是一个分布式数据库。,,zh
+E1_ml_de_00,E1,E,,F1,ml,Das Schuhwerk ist ein wasserdichter Wanderstiefel.,,de
+E1_ml_de_01,E1,E,,F1,ml,Dieser Schuh ist ein wasserdichter Wanderstiefel.,,de
+E1_ml_es_00,E1,E,,F1,ml,El calzado es una bota de senderismo impermeable.,,es
+E1_ml_es_01,E1,E,,F1,ml,Este zapato es una bota de senderismo impermeable.,,es
+E1_ml_ar_00,E1,E,,F1,ml,الحذاء حذاء مشي مقاوم للماء.,,ar
+E1_ml_ar_01,E1,E,,F1,ml,هذا الحذاء حذاء مشي جبلي مقاوم للماء.,,ar
+E1_ml_zh_00,E1,E,,F1,ml,这双鞋是一双防水登山靴。,,zh
+E1_ml_zh_01,E1,E,,F1,ml,这只鞋是一双防水登山靴。,,zh
+E2_ml_de_00,E2,E,,F1,ml,Der Stuhl ist ein ergonomischer Bürostuhl.,,de
+E2_ml_de_01,E2,E,,F1,ml,Dieser Sitz ist ein ergonomischer Bürostuhl.,,de
+E2_ml_es_00,E2,E,,F1,ml,La silla es una silla de oficina ergonómica.,,es
+E2_ml_es_01,E2,E,,F1,ml,Este asiento es una silla de oficina ergonómica.,,es
+E2_ml_ar_00,E2,E,,F1,ml,الكرسي كرسي مكتبي مريح للجسم.,,ar
+E2_ml_ar_01,E2,E,,F1,ml,هذا المقعد كرسي مكتبي مريح للجسم.,,ar
+E2_ml_zh_00,E2,E,,F1,ml,这把椅子是一把符合人体工程学的办公椅。,,zh
+E2_ml_zh_01,E2,E,,F1,ml,这个座位是一把符合人体工程学的办公椅。,,zh
+E3_ml_de_00,E3,E,,F1,ml,Das Gebäude ist ein Wohnhochhaus.,,de
+E3_ml_de_01,E3,E,,F1,ml,Dieses Bauwerk ist ein Wohnhochhaus.,,de
+E3_ml_es_00,E3,E,,F1,ml,El edificio es un edificio de apartamentos residenciales.,,es
+E3_ml_es_01,E3,E,,F1,ml,Esta estructura es un edificio de apartamentos residenciales.,,es
+E3_ml_ar_00,E3,E,,F1,ml,المبنى مبنى شقق سكنية.,,ar
+E3_ml_ar_01,E3,E,,F1,ml,هذا المبنى مبنى شقق سكنية.,,ar
+E3_ml_zh_00,E3,E,,F1,ml,这栋建筑是一栋住宅公寓楼。,,zh
+E3_ml_zh_01,E3,E,,F1,ml,这个建筑是一栋住宅公寓楼。,,zh
+E4_ml_de_00,E4,E,,F1,ml,Das Gebäude ist ein Hochhaus mit Wohnungen.,,de
+E4_ml_de_01,E4,E,,F1,ml,Dieses Bauwerk ist ein Hochhaus mit Wohnungen.,,de
+E4_ml_es_00,E4,E,,F1,ml,El edificio es un edificio de apartamentos de gran altura.,,es
+E4_ml_es_01,E4,E,,F1,ml,Esta estructura es un edificio de apartamentos de gran altura.,,es
+E4_ml_ar_00,E4,E,,F1,ml,المبنى برج سكني شاهق.,,ar
+E4_ml_ar_01,E4,E,,F1,ml,هذا المبنى برج سكني شاهق.,,ar
+E4_ml_zh_00,E4,E,,F1,ml,这栋建筑是一栋高层公寓楼。,,zh
+E4_ml_zh_01,E4,E,,F1,ml,这个建筑是一栋高层公寓楼。,,zh
+F1_ml_de_00,F1,F,,F1,ml,Die Institution ist eine öffentliche Forschungsuniversität.,,de
+F1_ml_de_01,F1,F,,F1,ml,Diese Organisation ist eine öffentliche Forschungsuniversität.,,de
+F1_ml_es_00,F1,F,,F1,ml,La institución es una universidad pública de investigación.,,es
+F1_ml_es_01,F1,F,,F1,ml,Esta organización es una universidad pública de investigación.,,es
+F1_ml_ar_00,F1,F,,F1,ml,المؤسسة جامعة بحثية حكومية.,,ar
+F1_ml_ar_01,F1,F,,F1,ml,هذه المنظمة جامعة بحثية حكومية.,,ar
+F1_ml_zh_00,F1,F,,F1,ml,该机构是一所公立研究型大学。,,zh
+F1_ml_zh_01,F1,F,,F1,ml,该组织是一所公立研究型大学。,,zh
+F2_ml_de_00,F2,F,,F1,ml,Die Institution ist eine öffentliche Universität.,,de
+F2_ml_de_01,F2,F,,F1,ml,Diese Organisation ist eine öffentliche Universität.,,de
+F2_ml_es_00,F2,F,,F1,ml,La institución es una universidad pública.,,es
+F2_ml_es_01,F2,F,,F1,ml,Esta organización es una universidad pública.,,es
+F2_ml_ar_00,F2,F,,F1,ml,المؤسسة جامعة حكومية.,,ar
+F2_ml_ar_01,F2,F,,F1,ml,هذه المنظمة جامعة حكومية.,,ar
+F2_ml_zh_00,F2,F,,F1,ml,该机构是一所公立大学。,,zh
+F2_ml_zh_01,F2,F,,F1,ml,该组织是一所公立大学。,,zh
+F3_ml_de_00,F3,F,,F1,ml,Das Dokument ist ein befristeter Arbeitsvertrag.,,de
+F3_ml_de_01,F3,F,,F1,ml,Diese Vereinbarung ist ein befristeter Arbeitsvertrag.,,de
+F3_ml_es_00,F3,F,,F1,ml,El documento es un contrato de trabajo de duración determinada.,,es
+F3_ml_es_01,F3,F,,F1,ml,Este acuerdo es un contrato de trabajo de duración determinada.,,es
+F3_ml_ar_00,F3,F,,F1,ml,الوثيقة عقد عمل محدد المدة.,,ar
+F3_ml_ar_01,F3,F,,F1,ml,هذه الاتفاقية عقد عمل محدد المدة.,,ar
+F3_ml_zh_00,F3,F,,F1,ml,该文件是一份固定期限劳动合同。,,zh
+F3_ml_zh_01,F3,F,,F1,ml,该协议是一份固定期限劳动合同。,,zh
+F4_ml_de_00,F4,F,,F1,ml,Das Dokument ist ein Arbeitsvertrag.,,de
+F4_ml_de_01,F4,F,,F1,ml,Diese Vereinbarung ist ein Arbeitsvertrag.,,de
+F4_ml_es_00,F4,F,,F1,ml,El documento es un contrato de trabajo.,,es
+F4_ml_es_01,F4,F,,F1,ml,Este acuerdo es un contrato de trabajo.,,es
+F4_ml_ar_00,F4,F,,F1,ml,الوثيقة عقد عمل.,,ar
+F4_ml_ar_01,F4,F,,F1,ml,هذه الاتفاقية عقد عمل.,,ar
+F4_ml_zh_00,F4,F,,F1,ml,该文件是一份劳动合同。,,zh
+F4_ml_zh_01,F4,F,,F1,ml,该协议是一份劳动合同。,,zh

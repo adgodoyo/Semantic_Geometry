@@ -1,0 +1,879 @@
+{
+  "metadata": {
+    "name": "redundant_commonality_controls_v1",
+    "description": "Control dataset of common collocational refinements. Each chain has a base concept plus four refinement levels where added modifiers are common, expected, or weakly informative rather than strongly independent semantic constraints.",
+    "purpose": "Test whether LLMs compress commonality or weak semantic additions, as opposed to truly independent refinements.",
+    "total_chains": 10,
+    "levels_per_chain": 5,
+    "examples_per_level": 8,
+    "total_examples": 400,
+    "design_rules": [
+      "Each chain uses very common words that naturally go together.",
+      "Each refinement is intentionally weak, expected, prototypical, or partially redundant.",
+      "These are controls for commonality and low-information additions, not strong confirmatory refinement chains.",
+      "Base plus four refinement levels are included for every chain."
+    ]
+  },
+  "chains": [
+    {
+      "chain_id": "fruit_common",
+      "domain": "food_natural_objects",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "fruit",
+          "added_dimension": "base_ontology",
+          "descriptor": "an edible plant product",
+          "examples": [
+            "This is fruit.",
+            "The entity is fruit.",
+            "It belongs to the category of fruit.",
+            "In context, this should be understood as fruit.",
+            "A concise description is: an edible plant product.",
+            "More specifically, it is an edible plant product.",
+            "The most accurate label here is fruit, meaning an edible plant product.",
+            "This refers to fruit: an edible plant product."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "ripe fruit",
+          "added_dimension": "maturity_default",
+          "descriptor": "fruit that is ready to eat",
+          "examples": [
+            "This is ripe fruit.",
+            "The entity is ripe fruit.",
+            "It belongs to the category of ripe fruit.",
+            "In context, this should be understood as ripe fruit.",
+            "A concise description is: fruit that is ready to eat.",
+            "More specifically, it is fruit that is ready to eat.",
+            "The most accurate label here is ripe fruit, meaning fruit that is ready to eat.",
+            "This refers to ripe fruit: fruit that is ready to eat."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "sweet ripe fruit",
+          "added_dimension": "taste_typicality",
+          "descriptor": "ripe fruit with a sweet taste",
+          "examples": [
+            "This is sweet ripe fruit.",
+            "The entity is sweet ripe fruit.",
+            "It belongs to the category of sweet ripe fruit.",
+            "In context, this should be understood as sweet ripe fruit.",
+            "A concise description is: ripe fruit with a sweet taste.",
+            "More specifically, it is ripe fruit with a sweet taste.",
+            "The most accurate label here is sweet ripe fruit, meaning ripe fruit with a sweet taste.",
+            "This refers to sweet ripe fruit: ripe fruit with a sweet taste."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "fresh sweet ripe fruit",
+          "added_dimension": "freshness_default",
+          "descriptor": "sweet ripe fruit that has not aged or spoiled",
+          "examples": [
+            "This is fresh sweet ripe fruit.",
+            "The entity is fresh sweet ripe fruit.",
+            "It belongs to the category of fresh sweet ripe fruit.",
+            "In context, this should be understood as fresh sweet ripe fruit.",
+            "A concise description is: sweet ripe fruit that has not aged or spoiled.",
+            "More specifically, it is sweet ripe fruit that has not aged or spoiled.",
+            "The most accurate label here is fresh sweet ripe fruit, meaning sweet ripe fruit that has not aged or spoiled.",
+            "This refers to fresh sweet ripe fruit: sweet ripe fruit that has not aged or spoiled."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "juicy fresh sweet ripe fruit",
+          "added_dimension": "texture_typicality",
+          "descriptor": "fresh sweet ripe fruit with abundant juice",
+          "examples": [
+            "This is juicy fresh sweet ripe fruit.",
+            "The entity is juicy fresh sweet ripe fruit.",
+            "It belongs to the category of juicy fresh sweet ripe fruit.",
+            "In context, this should be understood as juicy fresh sweet ripe fruit.",
+            "A concise description is: fresh sweet ripe fruit with abundant juice.",
+            "More specifically, it is fresh sweet ripe fruit with abundant juice.",
+            "The most accurate label here is juicy fresh sweet ripe fruit, meaning fresh sweet ripe fruit with abundant juice.",
+            "This refers to juicy fresh sweet ripe fruit: fresh sweet ripe fruit with abundant juice."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "bread_common",
+      "domain": "food_prepared",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "bread",
+          "added_dimension": "base_ontology",
+          "descriptor": "a baked food made from dough",
+          "examples": [
+            "This is bread.",
+            "The entity is bread.",
+            "It belongs to the category of bread.",
+            "In context, this should be understood as bread.",
+            "A concise description is: a baked food made from dough.",
+            "More specifically, it is a baked food made from dough.",
+            "The most accurate label here is bread, meaning a baked food made from dough.",
+            "This refers to bread: a baked food made from dough."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "fresh bread",
+          "added_dimension": "freshness_default",
+          "descriptor": "bread that was baked recently",
+          "examples": [
+            "This is fresh bread.",
+            "The entity is fresh bread.",
+            "It belongs to the category of fresh bread.",
+            "In context, this should be understood as fresh bread.",
+            "A concise description is: bread that was baked recently.",
+            "More specifically, it is bread that was baked recently.",
+            "The most accurate label here is fresh bread, meaning bread that was baked recently.",
+            "This refers to fresh bread: bread that was baked recently."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "warm fresh bread",
+          "added_dimension": "serving_state_typical",
+          "descriptor": "fresh bread that is still warm",
+          "examples": [
+            "This is warm fresh bread.",
+            "The entity is warm fresh bread.",
+            "It belongs to the category of warm fresh bread.",
+            "In context, this should be understood as warm fresh bread.",
+            "A concise description is: fresh bread that is still warm.",
+            "More specifically, it is fresh bread that is still warm.",
+            "The most accurate label here is warm fresh bread, meaning fresh bread that is still warm.",
+            "This refers to warm fresh bread: fresh bread that is still warm."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "soft warm fresh bread",
+          "added_dimension": "texture_typicality",
+          "descriptor": "warm fresh bread with a soft texture",
+          "examples": [
+            "This is soft warm fresh bread.",
+            "The entity is soft warm fresh bread.",
+            "It belongs to the category of soft warm fresh bread.",
+            "In context, this should be understood as soft warm fresh bread.",
+            "A concise description is: warm fresh bread with a soft texture.",
+            "More specifically, it is warm fresh bread with a soft texture.",
+            "The most accurate label here is soft warm fresh bread, meaning warm fresh bread with a soft texture.",
+            "This refers to soft warm fresh bread: warm fresh bread with a soft texture."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "soft warm fresh homemade bread",
+          "added_dimension": "provenance_common_positive",
+          "descriptor": "soft warm fresh bread made at home",
+          "examples": [
+            "This is soft warm fresh homemade bread.",
+            "The entity is soft warm fresh homemade bread.",
+            "It belongs to the category of soft warm fresh homemade bread.",
+            "In context, this should be understood as soft warm fresh homemade bread.",
+            "A concise description is: soft warm fresh bread made at home.",
+            "More specifically, it is soft warm fresh bread made at home.",
+            "The most accurate label here is soft warm fresh homemade bread, meaning soft warm fresh bread made at home.",
+            "This refers to soft warm fresh homemade bread: soft warm fresh bread made at home."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "coffee_common",
+      "domain": "beverages",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "coffee",
+          "added_dimension": "base_ontology",
+          "descriptor": "a drink made from brewed coffee beans",
+          "examples": [
+            "This is coffee.",
+            "The entity is coffee.",
+            "It belongs to the category of coffee.",
+            "In context, this should be understood as coffee.",
+            "A concise description is: a drink made from brewed coffee beans.",
+            "More specifically, it is a drink made from brewed coffee beans.",
+            "The most accurate label here is coffee, meaning a drink made from brewed coffee beans.",
+            "This refers to coffee: a drink made from brewed coffee beans."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "hot coffee",
+          "added_dimension": "serving_temperature_default",
+          "descriptor": "coffee served hot",
+          "examples": [
+            "This is hot coffee.",
+            "The entity is hot coffee.",
+            "It belongs to the category of hot coffee.",
+            "In context, this should be understood as hot coffee.",
+            "A concise description is: coffee served hot.",
+            "More specifically, it is coffee served hot.",
+            "The most accurate label here is hot coffee, meaning coffee served hot.",
+            "This refers to hot coffee: coffee served hot."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "fresh hot coffee",
+          "added_dimension": "freshness_typical",
+          "descriptor": "hot coffee prepared recently",
+          "examples": [
+            "This is fresh hot coffee.",
+            "The entity is fresh hot coffee.",
+            "It belongs to the category of fresh hot coffee.",
+            "In context, this should be understood as fresh hot coffee.",
+            "A concise description is: hot coffee prepared recently.",
+            "More specifically, it is hot coffee prepared recently.",
+            "The most accurate label here is fresh hot coffee, meaning hot coffee prepared recently.",
+            "This refers to fresh hot coffee: hot coffee prepared recently."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "strong fresh hot coffee",
+          "added_dimension": "strength_preference",
+          "descriptor": "fresh hot coffee with a strong flavor",
+          "examples": [
+            "This is strong fresh hot coffee.",
+            "The entity is strong fresh hot coffee.",
+            "It belongs to the category of strong fresh hot coffee.",
+            "In context, this should be understood as strong fresh hot coffee.",
+            "A concise description is: fresh hot coffee with a strong flavor.",
+            "More specifically, it is fresh hot coffee with a strong flavor.",
+            "The most accurate label here is strong fresh hot coffee, meaning fresh hot coffee with a strong flavor.",
+            "This refers to strong fresh hot coffee: fresh hot coffee with a strong flavor."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "strong fresh hot black coffee",
+          "added_dimension": "preparation_style_common",
+          "descriptor": "strong fresh hot coffee served without milk",
+          "examples": [
+            "This is strong fresh hot black coffee.",
+            "The entity is strong fresh hot black coffee.",
+            "It belongs to the category of strong fresh hot black coffee.",
+            "In context, this should be understood as strong fresh hot black coffee.",
+            "A concise description is: strong fresh hot coffee served without milk.",
+            "More specifically, it is strong fresh hot coffee served without milk.",
+            "The most accurate label here is strong fresh hot black coffee, meaning strong fresh hot coffee served without milk.",
+            "This refers to strong fresh hot black coffee: strong fresh hot coffee served without milk."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "snow_common",
+      "domain": "weather_nature",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "snow",
+          "added_dimension": "base_ontology",
+          "descriptor": "frozen precipitation in white flakes",
+          "examples": [
+            "This is snow.",
+            "The entity is snow.",
+            "It belongs to the category of snow.",
+            "In context, this should be understood as snow.",
+            "A concise description is: frozen precipitation in white flakes.",
+            "More specifically, it is frozen precipitation in white flakes.",
+            "The most accurate label here is snow, meaning frozen precipitation in white flakes.",
+            "This refers to snow: frozen precipitation in white flakes."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "cold snow",
+          "added_dimension": "temperature_default",
+          "descriptor": "snow that is cold",
+          "examples": [
+            "This is cold snow.",
+            "The entity is cold snow.",
+            "It belongs to the category of cold snow.",
+            "In context, this should be understood as cold snow.",
+            "A concise description is: snow that is cold.",
+            "More specifically, it is snow that is cold.",
+            "The most accurate label here is cold snow, meaning snow that is cold.",
+            "This refers to cold snow: snow that is cold."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "white cold snow",
+          "added_dimension": "color_default",
+          "descriptor": "cold snow that is white",
+          "examples": [
+            "This is white cold snow.",
+            "The entity is white cold snow.",
+            "It belongs to the category of white cold snow.",
+            "In context, this should be understood as white cold snow.",
+            "A concise description is: cold snow that is white.",
+            "More specifically, it is cold snow that is white.",
+            "The most accurate label here is white cold snow, meaning cold snow that is white.",
+            "This refers to white cold snow: cold snow that is white."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "soft white cold snow",
+          "added_dimension": "texture_typicality",
+          "descriptor": "white cold snow with a soft texture",
+          "examples": [
+            "This is soft white cold snow.",
+            "The entity is soft white cold snow.",
+            "It belongs to the category of soft white cold snow.",
+            "In context, this should be understood as soft white cold snow.",
+            "A concise description is: white cold snow with a soft texture.",
+            "More specifically, it is white cold snow with a soft texture.",
+            "The most accurate label here is soft white cold snow, meaning white cold snow with a soft texture.",
+            "This refers to soft white cold snow: white cold snow with a soft texture."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "fresh soft white cold snow",
+          "added_dimension": "freshness_common",
+          "descriptor": "soft white cold snow that has recently fallen",
+          "examples": [
+            "This is fresh soft white cold snow.",
+            "The entity is fresh soft white cold snow.",
+            "It belongs to the category of fresh soft white cold snow.",
+            "In context, this should be understood as fresh soft white cold snow.",
+            "A concise description is: soft white cold snow that has recently fallen.",
+            "More specifically, it is soft white cold snow that has recently fallen.",
+            "The most accurate label here is fresh soft white cold snow, meaning soft white cold snow that has recently fallen.",
+            "This refers to fresh soft white cold snow: soft white cold snow that has recently fallen."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "fire_common",
+      "domain": "physical_phenomena",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "fire",
+          "added_dimension": "base_ontology",
+          "descriptor": "combustion producing heat and light",
+          "examples": [
+            "This is fire.",
+            "The entity is fire.",
+            "It belongs to the category of fire.",
+            "In context, this should be understood as fire.",
+            "A concise description is: combustion producing heat and light.",
+            "More specifically, it is combustion producing heat and light.",
+            "The most accurate label here is fire, meaning combustion producing heat and light.",
+            "This refers to fire: combustion producing heat and light."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "hot fire",
+          "added_dimension": "temperature_default",
+          "descriptor": "fire that is hot",
+          "examples": [
+            "This is hot fire.",
+            "The entity is hot fire.",
+            "It belongs to the category of hot fire.",
+            "In context, this should be understood as hot fire.",
+            "A concise description is: fire that is hot.",
+            "More specifically, it is fire that is hot.",
+            "The most accurate label here is hot fire, meaning fire that is hot.",
+            "This refers to hot fire: fire that is hot."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "bright hot fire",
+          "added_dimension": "visual_default",
+          "descriptor": "hot fire that burns brightly",
+          "examples": [
+            "This is bright hot fire.",
+            "The entity is bright hot fire.",
+            "It belongs to the category of bright hot fire.",
+            "In context, this should be understood as bright hot fire.",
+            "A concise description is: hot fire that burns brightly.",
+            "More specifically, it is hot fire that burns brightly.",
+            "The most accurate label here is bright hot fire, meaning hot fire that burns brightly.",
+            "This refers to bright hot fire: hot fire that burns brightly."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "strong bright hot fire",
+          "added_dimension": "intensity_common",
+          "descriptor": "bright hot fire with strong intensity",
+          "examples": [
+            "This is strong bright hot fire.",
+            "The entity is strong bright hot fire.",
+            "It belongs to the category of strong bright hot fire.",
+            "In context, this should be understood as strong bright hot fire.",
+            "A concise description is: bright hot fire with strong intensity.",
+            "More specifically, it is bright hot fire with strong intensity.",
+            "The most accurate label here is strong bright hot fire, meaning bright hot fire with strong intensity.",
+            "This refers to strong bright hot fire: bright hot fire with strong intensity."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "strong bright hot burning fire",
+          "added_dimension": "near_redundant_intensity",
+          "descriptor": "a strongly burning bright hot fire",
+          "examples": [
+            "This is strong bright hot burning fire.",
+            "The entity is strong bright hot burning fire.",
+            "It belongs to the category of strong bright hot burning fire.",
+            "In context, this should be understood as strong bright hot burning fire.",
+            "A concise description is: a strongly burning bright hot fire.",
+            "More specifically, it is a strongly burning bright hot fire.",
+            "The most accurate label here is strong bright hot burning fire, meaning a strongly burning bright hot fire.",
+            "This refers to strong bright hot burning fire: a strongly burning bright hot fire."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "bird_common",
+      "domain": "animals",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "bird",
+          "added_dimension": "base_ontology",
+          "descriptor": "a feathered egg-laying animal with wings",
+          "examples": [
+            "This is bird.",
+            "The entity is bird.",
+            "It belongs to the category of bird.",
+            "In context, this should be understood as bird.",
+            "A concise description is: a feathered egg-laying animal with wings.",
+            "More specifically, it is a feathered egg-laying animal with wings.",
+            "The most accurate label here is bird, meaning a feathered egg-laying animal with wings.",
+            "This refers to bird: a feathered egg-laying animal with wings."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "feathered bird",
+          "added_dimension": "feature_redundancy",
+          "descriptor": "a bird with feathers",
+          "examples": [
+            "This is feathered bird.",
+            "The entity is feathered bird.",
+            "It belongs to the category of feathered bird.",
+            "In context, this should be understood as feathered bird.",
+            "A concise description is: a bird with feathers.",
+            "More specifically, it is a bird with feathers.",
+            "The most accurate label here is feathered bird, meaning a bird with feathers.",
+            "This refers to feathered bird: a bird with feathers."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "small feathered bird",
+          "added_dimension": "size_typicality",
+          "descriptor": "a feathered bird of small size",
+          "examples": [
+            "This is small feathered bird.",
+            "The entity is small feathered bird.",
+            "It belongs to the category of small feathered bird.",
+            "In context, this should be understood as small feathered bird.",
+            "A concise description is: a feathered bird of small size.",
+            "More specifically, it is a feathered bird of small size.",
+            "The most accurate label here is small feathered bird, meaning a feathered bird of small size.",
+            "This refers to small feathered bird: a feathered bird of small size."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "small feathered flying bird",
+          "added_dimension": "ability_typicality",
+          "descriptor": "a small feathered bird that flies",
+          "examples": [
+            "This is small feathered flying bird.",
+            "The entity is small feathered flying bird.",
+            "It belongs to the category of small feathered flying bird.",
+            "In context, this should be understood as small feathered flying bird.",
+            "A concise description is: a small feathered bird that flies.",
+            "More specifically, it is a small feathered bird that flies.",
+            "The most accurate label here is small feathered flying bird, meaning a small feathered bird that flies.",
+            "This refers to small feathered flying bird: a small feathered bird that flies."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "small feathered flying songbird",
+          "added_dimension": "prototypical_subtype",
+          "descriptor": "a small feathered flying bird that sings",
+          "examples": [
+            "This is small feathered flying songbird.",
+            "The entity is small feathered flying songbird.",
+            "It belongs to the category of small feathered flying songbird.",
+            "In context, this should be understood as small feathered flying songbird.",
+            "A concise description is: a small feathered flying bird that sings.",
+            "More specifically, it is a small feathered flying bird that sings.",
+            "The most accurate label here is small feathered flying songbird, meaning a small feathered flying bird that sings.",
+            "This refers to small feathered flying songbird: a small feathered flying bird that sings."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "tree_common",
+      "domain": "plants",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "tree",
+          "added_dimension": "base_ontology",
+          "descriptor": "a tall perennial plant with a trunk",
+          "examples": [
+            "This is tree.",
+            "The entity is tree.",
+            "It belongs to the category of tree.",
+            "In context, this should be understood as tree.",
+            "A concise description is: a tall perennial plant with a trunk.",
+            "More specifically, it is a tall perennial plant with a trunk.",
+            "The most accurate label here is tree, meaning a tall perennial plant with a trunk.",
+            "This refers to tree: a tall perennial plant with a trunk."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "green tree",
+          "added_dimension": "color_default",
+          "descriptor": "a tree with green foliage",
+          "examples": [
+            "This is green tree.",
+            "The entity is green tree.",
+            "It belongs to the category of green tree.",
+            "In context, this should be understood as green tree.",
+            "A concise description is: a tree with green foliage.",
+            "More specifically, it is a tree with green foliage.",
+            "The most accurate label here is green tree, meaning a tree with green foliage.",
+            "This refers to green tree: a tree with green foliage."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "tall green tree",
+          "added_dimension": "size_typicality",
+          "descriptor": "a green tree that is tall",
+          "examples": [
+            "This is tall green tree.",
+            "The entity is tall green tree.",
+            "It belongs to the category of tall green tree.",
+            "In context, this should be understood as tall green tree.",
+            "A concise description is: a green tree that is tall.",
+            "More specifically, it is a green tree that is tall.",
+            "The most accurate label here is tall green tree, meaning a green tree that is tall.",
+            "This refers to tall green tree: a green tree that is tall."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "tall green leafy tree",
+          "added_dimension": "feature_typicality",
+          "descriptor": "a tall green tree with leaves",
+          "examples": [
+            "This is tall green leafy tree.",
+            "The entity is tall green leafy tree.",
+            "It belongs to the category of tall green leafy tree.",
+            "In context, this should be understood as tall green leafy tree.",
+            "A concise description is: a tall green tree with leaves.",
+            "More specifically, it is a tall green tree with leaves.",
+            "The most accurate label here is tall green leafy tree, meaning a tall green tree with leaves.",
+            "This refers to tall green leafy tree: a tall green tree with leaves."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "tall green leafy shade tree",
+          "added_dimension": "function_common",
+          "descriptor": "a tall green leafy tree that provides shade",
+          "examples": [
+            "This is tall green leafy shade tree.",
+            "The entity is tall green leafy shade tree.",
+            "It belongs to the category of tall green leafy shade tree.",
+            "In context, this should be understood as tall green leafy shade tree.",
+            "A concise description is: a tall green leafy tree that provides shade.",
+            "More specifically, it is a tall green leafy tree that provides shade.",
+            "The most accurate label here is tall green leafy shade tree, meaning a tall green leafy tree that provides shade.",
+            "This refers to tall green leafy shade tree: a tall green leafy tree that provides shade."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "river_common",
+      "domain": "geography",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "river",
+          "added_dimension": "base_ontology",
+          "descriptor": "a natural flowing body of water",
+          "examples": [
+            "This is river.",
+            "The entity is river.",
+            "It belongs to the category of river.",
+            "In context, this should be understood as river.",
+            "A concise description is: a natural flowing body of water.",
+            "More specifically, it is a natural flowing body of water.",
+            "The most accurate label here is river, meaning a natural flowing body of water.",
+            "This refers to river: a natural flowing body of water."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "long river",
+          "added_dimension": "extent_common",
+          "descriptor": "a river with great length",
+          "examples": [
+            "This is long river.",
+            "The entity is long river.",
+            "It belongs to the category of long river.",
+            "In context, this should be understood as long river.",
+            "A concise description is: a river with great length.",
+            "More specifically, it is a river with great length.",
+            "The most accurate label here is long river, meaning a river with great length.",
+            "This refers to long river: a river with great length."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "wide long river",
+          "added_dimension": "size_typicality",
+          "descriptor": "a long river that is wide",
+          "examples": [
+            "This is wide long river.",
+            "The entity is wide long river.",
+            "It belongs to the category of wide long river.",
+            "In context, this should be understood as wide long river.",
+            "A concise description is: a long river that is wide.",
+            "More specifically, it is a long river that is wide.",
+            "The most accurate label here is wide long river, meaning a long river that is wide.",
+            "This refers to wide long river: a long river that is wide."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "wide long flowing river",
+          "added_dimension": "motion_redundancy",
+          "descriptor": "a wide long river that flows",
+          "examples": [
+            "This is wide long flowing river.",
+            "The entity is wide long flowing river.",
+            "It belongs to the category of wide long flowing river.",
+            "In context, this should be understood as wide long flowing river.",
+            "A concise description is: a wide long river that flows.",
+            "More specifically, it is a wide long river that flows.",
+            "The most accurate label here is wide long flowing river, meaning a wide long river that flows.",
+            "This refers to wide long flowing river: a wide long river that flows."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "wide long flowing freshwater river",
+          "added_dimension": "water_type_default",
+          "descriptor": "a wide long flowing river containing fresh water",
+          "examples": [
+            "This is wide long flowing freshwater river.",
+            "The entity is wide long flowing freshwater river.",
+            "It belongs to the category of wide long flowing freshwater river.",
+            "In context, this should be understood as wide long flowing freshwater river.",
+            "A concise description is: a wide long flowing river containing fresh water.",
+            "More specifically, it is a wide long flowing river containing fresh water.",
+            "The most accurate label here is wide long flowing freshwater river, meaning a wide long flowing river containing fresh water.",
+            "This refers to wide long flowing freshwater river: a wide long flowing river containing fresh water."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "house_common",
+      "domain": "buildings",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "house",
+          "added_dimension": "base_ontology",
+          "descriptor": "a building used for living",
+          "examples": [
+            "This is house.",
+            "The entity is house.",
+            "It belongs to the category of house.",
+            "In context, this should be understood as house.",
+            "A concise description is: a building used for living.",
+            "More specifically, it is a building used for living.",
+            "The most accurate label here is house, meaning a building used for living.",
+            "This refers to house: a building used for living."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "family house",
+          "added_dimension": "occupancy_common",
+          "descriptor": "a house intended for a family",
+          "examples": [
+            "This is family house.",
+            "The entity is family house.",
+            "It belongs to the category of family house.",
+            "In context, this should be understood as family house.",
+            "A concise description is: a house intended for a family.",
+            "More specifically, it is a house intended for a family.",
+            "The most accurate label here is family house, meaning a house intended for a family.",
+            "This refers to family house: a house intended for a family."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "comfortable family house",
+          "added_dimension": "evaluation_common",
+          "descriptor": "a family house that is comfortable",
+          "examples": [
+            "This is comfortable family house.",
+            "The entity is comfortable family house.",
+            "It belongs to the category of comfortable family house.",
+            "In context, this should be understood as comfortable family house.",
+            "A concise description is: a family house that is comfortable.",
+            "More specifically, it is a family house that is comfortable.",
+            "The most accurate label here is comfortable family house, meaning a family house that is comfortable.",
+            "This refers to comfortable family house: a family house that is comfortable."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "comfortable modern family house",
+          "added_dimension": "style_common",
+          "descriptor": "a comfortable family house with a modern style",
+          "examples": [
+            "This is comfortable modern family house.",
+            "The entity is comfortable modern family house.",
+            "It belongs to the category of comfortable modern family house.",
+            "In context, this should be understood as comfortable modern family house.",
+            "A concise description is: a comfortable family house with a modern style.",
+            "More specifically, it is a comfortable family house with a modern style.",
+            "The most accurate label here is comfortable modern family house, meaning a comfortable family house with a modern style.",
+            "This refers to comfortable modern family house: a comfortable family house with a modern style."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "comfortable modern family home",
+          "added_dimension": "near_synonymic_commonality",
+          "descriptor": "a comfortable modern family house described as a home",
+          "examples": [
+            "This is comfortable modern family home.",
+            "The entity is comfortable modern family home.",
+            "It belongs to the category of comfortable modern family home.",
+            "In context, this should be understood as comfortable modern family home.",
+            "A concise description is: a comfortable modern family house described as a home.",
+            "More specifically, it is a comfortable modern family house described as a home.",
+            "The most accurate label here is comfortable modern family home, meaning a comfortable modern family house described as a home.",
+            "This refers to comfortable modern family home: a comfortable modern family house described as a home."
+          ]
+        }
+      ]
+    },
+    {
+      "chain_id": "dog_common",
+      "domain": "animals_domestic",
+      "levels": [
+        {
+          "level": 0,
+          "concept": "dog",
+          "added_dimension": "base_ontology",
+          "descriptor": "a domesticated canine animal",
+          "examples": [
+            "This is dog.",
+            "The entity is dog.",
+            "It belongs to the category of dog.",
+            "In context, this should be understood as dog.",
+            "A concise description is: a domesticated canine animal.",
+            "More specifically, it is a domesticated canine animal.",
+            "The most accurate label here is dog, meaning a domesticated canine animal.",
+            "This refers to dog: a domesticated canine animal."
+          ]
+        },
+        {
+          "level": 1,
+          "concept": "pet dog",
+          "added_dimension": "role_common",
+          "descriptor": "a dog kept as a pet",
+          "examples": [
+            "This is pet dog.",
+            "The entity is pet dog.",
+            "It belongs to the category of pet dog.",
+            "In context, this should be understood as pet dog.",
+            "A concise description is: a dog kept as a pet.",
+            "More specifically, it is a dog kept as a pet.",
+            "The most accurate label here is pet dog, meaning a dog kept as a pet.",
+            "This refers to pet dog: a dog kept as a pet."
+          ]
+        },
+        {
+          "level": 2,
+          "concept": "friendly pet dog",
+          "added_dimension": "temperament_common",
+          "descriptor": "a pet dog with a friendly temperament",
+          "examples": [
+            "This is friendly pet dog.",
+            "The entity is friendly pet dog.",
+            "It belongs to the category of friendly pet dog.",
+            "In context, this should be understood as friendly pet dog.",
+            "A concise description is: a pet dog with a friendly temperament.",
+            "More specifically, it is a pet dog with a friendly temperament.",
+            "The most accurate label here is friendly pet dog, meaning a pet dog with a friendly temperament.",
+            "This refers to friendly pet dog: a pet dog with a friendly temperament."
+          ]
+        },
+        {
+          "level": 3,
+          "concept": "friendly playful pet dog",
+          "added_dimension": "behavior_common",
+          "descriptor": "a friendly pet dog that is playful",
+          "examples": [
+            "This is friendly playful pet dog.",
+            "The entity is friendly playful pet dog.",
+            "It belongs to the category of friendly playful pet dog.",
+            "In context, this should be understood as friendly playful pet dog.",
+            "A concise description is: a friendly pet dog that is playful.",
+            "More specifically, it is a friendly pet dog that is playful.",
+            "The most accurate label here is friendly playful pet dog, meaning a friendly pet dog that is playful.",
+            "This refers to friendly playful pet dog: a friendly pet dog that is playful."
+          ]
+        },
+        {
+          "level": 4,
+          "concept": "friendly playful loyal pet dog",
+          "added_dimension": "trait_accumulation_common",
+          "descriptor": "a friendly playful pet dog that is also loyal",
+          "examples": [
+            "This is friendly playful loyal pet dog.",
+            "The entity is friendly playful loyal pet dog.",
+            "It belongs to the category of friendly playful loyal pet dog.",
+            "In context, this should be understood as friendly playful loyal pet dog.",
+            "A concise description is: a friendly playful pet dog that is also loyal.",
+            "More specifically, it is a friendly playful pet dog that is also loyal.",
+            "The most accurate label here is friendly playful loyal pet dog, meaning a friendly playful pet dog that is also loyal.",
+            "This refers to friendly playful loyal pet dog: a friendly playful pet dog that is also loyal."
+          ]
+        }
+      ]
+    }
+  ]
+}
